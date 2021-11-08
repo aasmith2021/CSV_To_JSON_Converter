@@ -1,3 +1,6 @@
+# Ignore output test.json file
+test.json
+
 # Logs
 logs
 *.log
