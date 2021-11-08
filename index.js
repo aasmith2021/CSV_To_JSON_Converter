@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { csvToJSON } = require('./csvToJSON.js');
 
+// EDIT THESE FILE PATHS:
 const filePathOfCSVFile = path.resolve(__dirname, './test.csv');
 const filePathOfNewJSONFile = path.resolve(__dirname, './test.json');
 
