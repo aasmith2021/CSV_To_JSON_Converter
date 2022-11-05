@@ -45,7 +45,7 @@ const splitCSVLineToArray = (dataRow, convertBooleanAndNullStrings) => {
  * @returns {[Object]} - An array of data objects populated with the key-value pairs
  * of the header data and the corresponding row data.
  */
-const csvToJSON = (rawCSVData, convertBooleanAndNullStrings = false) => {
+const csvToJSON = (rawCSVData, convertBooleanAndNullStrings) => {
     const lineBreakCharacter = rawCSVData.includes('\r\n') ? '\r\n' : '\n';
 
     [headerRow, ...dataRows] = rawCSVData.split(lineBreakCharacter);
